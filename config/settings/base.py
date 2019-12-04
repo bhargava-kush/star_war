@@ -77,6 +77,8 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     "star_war.users.apps.UsersConfig",
     # Your stuff: custom apps go here
+    "star_war.starwar_app"
+
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

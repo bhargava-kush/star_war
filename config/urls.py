@@ -10,6 +10,11 @@ urlpatterns = [
     path(
         "about/", TemplateView.as_view(template_name="pages/about.html"), name="about"
     ),
+    path(
+      "api/",
+      include("star_war.starwar_app.urls", namespace="starwar_app"),
+    ),
+
     # Django Admin, use {% url 'admin:index' %}
     path(settings.ADMIN_URL, admin.site.urls),
     # User management
